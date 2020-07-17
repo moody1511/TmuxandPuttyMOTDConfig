@@ -9,6 +9,9 @@ Windows   = new window with pane
 ctrl+b+c  =new windows
 ctrl+b+0  =change to 0 window
 ctrl+b+,   =rename window
+ctrl+b+x   = destroy one window
+ctrl+b+&   = kill windows
+
 
 Sessions   = form of open window all the time
 ctrl+b+d   =detach session
@@ -21,10 +24,11 @@ tmux kill-session -t |sessionname|
 ctrl+b :setw synchronize-panes
 
 
+tmux source-file ~/.tmux.conf
 bind e set-window-option synchronize-panes
 set -g mouse on
 bind -t vi-copy y copy-pipe "xclip -sel clip -i"
-ssh -X moody@192.168.1.165
+
 
 
 shift+right click =paste clipboard
