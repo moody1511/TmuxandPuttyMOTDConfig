@@ -1,0 +1,30 @@
+ctrl+b %   =horizontal split
+ctrl+b "   =vertical split
+
+
+ctrl+b arrow keys   =change between split windows
+
+Windows   = new window with pane
+
+ctrl+b+c  =new windows
+ctrl+b+0  =change to 0 window
+ctrl+b+,   =rename window
+
+Sessions   = form of open window all the time
+ctrl+b+d   =detach session
+tmux ls  =show sessions
+tmux attach -t |sessionname|
+tmux rename-session -t |sessioname| |newsessioname|
+tmux new -s docker
+tmux kill-session -t |sessionname|
+
+ctrl+b :setw synchronize-panes
+
+
+bind e set-window-option synchronize-panes
+set -g mouse on
+bind -t vi-copy y copy-pipe "xclip -sel clip -i"
+ssh -X moody@192.168.1.165
+
+
+shift+right click =paste clipboard
