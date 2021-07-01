@@ -188,4 +188,3 @@ alias ll='ls -la'                              # long list
 # }
 # 
 # alias cd=cd_func
-[ "$PS1" = "\\s-\\v\\\$ " ] && PS1="\u@\h:\w:\[$(tput sgr0)\]"
