@@ -6,3 +6,5 @@ pacman -Su
 .bash_profile
 .bashrc
 paste C:\msys64\home\|user|
+
+pacman -S procps-ng
